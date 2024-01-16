@@ -39,7 +39,15 @@ module.exports = (eleventyConfig) => {
         alt,
       };
 
-      return Image.generateHTML(metadata, imageAttributes);
+     // Genera l'HTML per l'immagine.
+    let html = Image.generateHTML(metadata, imageAttributes);
+
+    // Aggiungi ".." all'inizio del percorso dell'immagine nell'HTML.
+    html = html.replace(/srcset="\/img\//g, 'srcset="../img/');
+    html = html.replace(/src="\/img\//g, 'src="../img/');
+
+
+    return html;
     }
   );
 
@@ -75,6 +83,7 @@ module.exports = (eleventyConfig) => {
       return metadata[keys[0]][0].url;
     }
   );
+
 
   return {
     passthroughFileCopy: true,
