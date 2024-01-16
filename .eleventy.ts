@@ -3,7 +3,7 @@ import Image from '@11ty/eleventy-img';
 
 const imagify = async (src, options = {}) => {
   const defaults = {
-    outputDir: './build/img/',
+    outputDir: './docs/img/',
   };
 
   const metadata = await Image(src, { ...defaults, ...options });
@@ -80,7 +80,7 @@ module.exports = (eleventyConfig) => {
     passthroughFileCopy: true,
     dir: {
       input: 'src',
-      output: 'build',
+      output: 'docs',
     },
   };
 };

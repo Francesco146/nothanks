@@ -1,8 +1,8 @@
 [build]
-  publish = "build/"
+  publish = "docs/"
   command = "yarn build"
 
 [[plugins]]
 package = "netlify-plugin-cache"
 [plugins.inputs]
-  paths = ["build/img"]
+  paths = ["docs/img"]
