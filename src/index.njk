@@ -13,6 +13,6 @@ const langs = [
 const base = langs[0];
 const preferred = localStorage.getItem('lang');
 
-const destination = languageMatcher(langs, base, preferred, navigator.language);
+const destination = ({{site.root}}).concat(languageMatcher(langs, base, preferred, navigator.language));
 window.location = destination;
 </script>
