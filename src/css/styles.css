@@ -418,7 +418,7 @@ h1.name {
 }
 
 .other-languages li:after {
-  content: ',';
+  content: ' ';
 }
 
 .other-languages li:last-child:before {
@@ -503,4 +503,30 @@ h1.name {
   .yepyep .section-title {
     margin-top: 80px;
   }
+}
+
+.thumbs-up-container {
+   margin-top: 10px; /* Imposta la distanza tra il messaggio e il cerchietto */
+   display: flex !important;
+   font-size: small;
+}
+
+.thumbs-up-container span {
+    padding-right: 10%;
+}
+
+.circle {
+   width: 35px !important; /* Imposta la larghezza del cerchio */
+   height: 30px; /* Imposta l'altezza del cerchio */
+   background-color: #00a000; /* Colore di sfondo del cerchio */
+   border-radius: 40%; /* Rende il rettangolo un cerchio */
+   display: flex;
+   align-items: center;
+   justify-content: right;
+}
+
+.thumbs-up-icon {
+   font-size: 25px; /* Regola la dimensione dell'emoji */
+   color: #ffffff; /* Colore del pollice in su */
+   padding: 0 0 0 5px; /* Imposta la distanza tra il pollice e il bordo del cerchio */
 }

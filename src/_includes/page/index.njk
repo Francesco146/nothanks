@@ -4,7 +4,7 @@
       <div id="plsstop">
         <h1 class="name">
           no
-          <span id="strike">hello</span>
+          <span id="strike">thanks</span>
         </h1>
       </div>
       <span class="subtitle">{{ _("header.subtitle") }}</span>
@@ -62,24 +62,18 @@
           <span class="slacktime">{{ _("example.good.message1.timestamp") }}</span><br />
           <span class="slackmessage">{{ _("example.good.message1.body") }}</span>
         </div>
-        <div class="slack">
+        <div class="slack" style="padding-bottom: 0;">
           {% image "./src/img/tim.png", _("example.character.neutral.avatar-description") %}
           <span class="slackname">{{ _("example.character.neutral.name") }}</span>
           <span class="slacktime">{{ _("example.good.reply1.timestamp") }}</span><br />
           <span class="slackmessage">{{ _("example.good.reply1.body") }}</span>
         </div>
-        <div class="slack">
-          {% image "./src/img/dawn.png", _("example.character.good.avatar-description") %}
-          <span class="slackname">{{ _("example.character.good.name") }}</span>
-          <span class="slacktime">{{ _("example.good.message2.timestamp") }}</span><br />
-          <span class="slackmessage">{{ _("example.good.message2.body") }}</span>
-        </div>
-        <div class="slack">
-          {% image "./src/img/tim.png", _("example.character.neutral.avatar-description") %}
-          <span class="slackname">{{ _("example.character.neutral.name") }}</span>
-          <span class="slacktime">{{ _("example.good.reply2.timestamp") }}</span><br />
-          <span class="slackmessage">{{ _("example.good.reply2.body") }}</span>
-        </div>
+        <div class="thumbs-up-container">
+            <span>{{ _("example.good.reaction1") }}</span>
+            <div class="circle">
+                <span class="thumbs-up-icon">👍</span>
+            </div>
+        </div>   
       </div>
     </div>
     <div class="sections sectionright">
@@ -93,9 +87,6 @@
   <footer>
     <p>
       {{ _md('footer.note') }}
-    </p>
-    <p>
-      {{ _md('footer.warning') }}
     </p>
     <p>
       {{ _md('footer.thanks') }}
@@ -149,5 +140,5 @@ whyyyyy = "url('{%- imageURL "./src/img/why.gif", { format: "webp", animated: tr
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-<script src="/js/nohello.js"></script>
-<script src="/js/hello.js"></script>
+<script src="/js/nothanks.js"></script>
+<script src="/js/thanks.js"></script>
