@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <title>no thanks</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <!-- primary meta -->
+    <meta name="title" content="no thanks" />
+    <meta name="description" content="Please, don't say thank you" />
+    <!-- opengraph/facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://francesco146.github.io/nothanks/" />
+    <meta property="og:title" content="no thanks" />
+    <meta
+      property="og:description"
+      content="Please, don't say thank you"
+    />
+    <meta property="og:image" content="https://francesco146.github.io/nothanks/img/XzfE_FYNGc-500.webp" />
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://francesco146.github.io/nothanks/" />
+    <meta property="twitter:title" content="no thanks" />
+    <meta
+      property="twitter:description"
+      content="Please, don't say thank you"
+    />
+    <meta property="twitter:image" content="https://francesco146.github.io/nothanks/img/XzfE_FYNGc-500.webp" />
+    <!-- icons -->
+    <link rel="apple-touch-icon" href="/img/rduOO4qVxo-180.webp" />
+    <link rel="shortcut icon" href="/img/xJUIlk3eTz-180.webp" type="image/x-icon" />
+    <link rel="icon" href="/img/xJUIlk3eTz-180.webp" type="image/x-icon" />
+
+    
+    <link rel="alternate" hreflang="en" href="https://francesco146.github.io/nothanks/en" />
+    
+    <link rel="alternate" hreflang="it" href="https://francesco146.github.io/nothanks/it" />
+    
+    <link rel="alternate" hreflang="x-default" href="https://francesco146.github.io/nothanks/" />
+  </head>
+  <body>
+    <script type="module">
+import { languageMatcher } from '/js/languageMatcher.js';
+
+const langs = ['en','it',];
+
+const base = langs[0];
+const preferred = localStorage.getItem('lang');
+
+const destination = languageMatcher(langs, base, preferred, navigator.language);
+window.location = destination;
+</script>
+
+  </body>
+</html>
