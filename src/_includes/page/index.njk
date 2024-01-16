@@ -103,7 +103,7 @@
       {% for locale in locales %}
         <li
           ><a
-            href="{%- relocalizePath locale.path, page.url -%}"
+            href="{{site.root}}{%- relocalizePath locale.path, page.url -%}"
             class="lang-chooser"
             data-lang="{{ locale.path }}"
             hreflang="{{ locale.path }}"
